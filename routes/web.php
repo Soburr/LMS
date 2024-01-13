@@ -4,6 +4,8 @@ use App\Http\Controllers\PortalController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterStudentController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\NewsletterController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,6 +35,9 @@ Route::get('/sign-up', [RegisterStudentController::class, 'showRegistrationForm'
 Route::get('/dashboard', [PortalController::class, 'dashboard'])->middleware('auth');
 Route::get('/dashboard', [PortalController::class, 'index'])->middleware('auth');
 Route::get('/logout', [PortalController::class, 'logout']);
+
+Route::get('/subscribe', [NewsletterController::class, 'showForm']);
+Route::post('/subscribe', [NewsletterController::class, 'subscribe'])->name('subscribe');
 
 
 require __DIR__.'/auth.php';

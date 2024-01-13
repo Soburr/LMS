@@ -124,6 +124,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-white mb-4">Newsletter</h3>
                         <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
@@ -132,6 +133,7 @@
                             <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                         </div>
                     </div>
+                    
                 </div>
             </div>
             <div class="container">
