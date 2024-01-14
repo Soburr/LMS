@@ -3,12 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Mail\SubscriptionConfirmation;
-use App\Models\Newsletter;
 use App\Models\Subscriber;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
-class NewsletterController extends Controller
+class SubscriberController extends Controller
 {
     public function showForm () {
         return view ('homepage.index');
