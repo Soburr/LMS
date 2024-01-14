@@ -23,5 +23,7 @@ class SubscriberController extends Controller
         $subscriber->save();
 
         Mail::to($subscriber->email)->send(new SubscriptionConfirmation($subscriber));
+
+        Return redirect('/')->with('message', 'Subscription Successful! Check your mail for confirmation');
     }
 }

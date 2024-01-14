@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterStudentController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SubscriberController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
