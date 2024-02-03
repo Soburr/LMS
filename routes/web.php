@@ -41,4 +41,4 @@ Route::post('/subscribe', [SubscriberController::class, 'subscribe'])->name('sub
 
 
 
-require __DIR__.'/auth.php';
+// require __DIR__.'/auth.php';

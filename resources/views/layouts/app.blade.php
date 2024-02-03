@@ -68,7 +68,7 @@
                     <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                     <a href="{{ url('log-in')}}" class="nav-item nav-link">Login to Portal</a>
                 </div>
-                <a href="" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i class="fa fa-arrow-right ms-3"></i></a>
+                <a href="{{ url('sign-up') }}" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i class="fa fa-arrow-right ms-3"></i></a>
             </div>
         </nav>
         <!-- Navbar End -->
