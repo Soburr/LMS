@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PortalController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterStudentController;
@@ -38,6 +39,8 @@ Route::get('/logout', [PortalController::class, 'logout']);
 
 Route::get('/subscribe', [SubscriberController::class, 'showForm']);
 Route::post('/subscribe', [SubscriberController::class, 'subscribe'])->name('subscribe');
+
+Route::get('/admin', [AdminController::class, 'showAdminRegister']);
 
 
 
